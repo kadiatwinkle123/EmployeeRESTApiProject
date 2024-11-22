@@ -1,4 +1,4 @@
-package com.twinkle.crud.controller;
+package com.venus.crud.controller;
 
 import com.twinkle.crud.entity.Employee;
 import com.twinkle.crud.service.EmployeeService;
@@ -13,27 +13,28 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @PostMapping("/employee")
+    @PostMapping("/saveEmployee")
     public Employee saveEmployee(@RequestBody Employee employee) {
         return employeeService.saveEmployee(employee);
     }
 
-    @GetMapping("/employee")
+    @GetMapping("/allEmployees")
     public List<Employee> getAllEmployees() {
         return employeeService.fetchAllEmployees();
     }
 
-    @GetMapping("/employee/{id}")
-    public Employee getEmployeeById(@PathVariable("id") Long id) {
+    @GetMapping("/getEmployee")
+    //public Employee getEmployeeById(@PathVariable("id") Long id) {
+    public Employee getEmployeeById(@RequestParam Long id) {
         return employeeService.getEmployeeById(id);
     }
 
-    @PutMapping("/employee/{id}")
+    @PutMapping("/updateEmployee/{id}")
     public Employee updateEmployee(@PathVariable("id") Long id, @RequestBody Employee employee) {
         return employeeService.updateEmployeeById(id, employee);
     }
 
-    @DeleteMapping("/employee/{id}")
+    @DeleteMapping("/deleteEmployee/{id}")
     public String deleteEmployee(@PathVariable("id") Long id) {
         return employeeService.deleteEmployeeById(id);
     }

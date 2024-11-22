@@ -1,4 +1,4 @@
-package com.twinkle.crud.entity;
+package com.venus.crud.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,20 +15,6 @@ public class Employee {
     private String employeeName;
 
     private float employeeSalary;
-
-    public Employee() {
-    }
-
-    public Employee(Long employeeId, String employeeName, float employeeSalary) {
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
-        this.employeeSalary = employeeSalary;
-    }
-
-    public Employee( String employeeName, float employeeSalary) {
-        this.employeeName = employeeName;
-        this.employeeSalary = employeeSalary;
-    }
 
     public Long getEmployeeId() {
         return employeeId;

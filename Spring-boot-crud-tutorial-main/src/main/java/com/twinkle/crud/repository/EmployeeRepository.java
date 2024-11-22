@@ -1,4 +1,4 @@
-package com.twinkle.crud.repository;
+package com.venus.crud.repository;
 
 import com.twinkle.crud.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

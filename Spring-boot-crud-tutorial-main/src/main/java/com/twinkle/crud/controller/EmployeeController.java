@@ -1,7 +1,7 @@
 package com.venus.crud.controller;
 
-import com.twinkle.crud.entity.Employee;
-import com.twinkle.crud.service.EmployeeService;
+import com.venus.crud.entity.Employee;
+import com.venus.crud.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

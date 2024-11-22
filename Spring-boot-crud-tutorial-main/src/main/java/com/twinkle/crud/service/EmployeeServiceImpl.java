@@ -1,7 +1,7 @@
 package com.venus.crud.service;
 
-import com.twinkle.crud.entity.Employee;
-import com.twinkle.crud.repository.EmployeeRepository;
+import com.venus.crud.entity.Employee;
+import com.venus.crud.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

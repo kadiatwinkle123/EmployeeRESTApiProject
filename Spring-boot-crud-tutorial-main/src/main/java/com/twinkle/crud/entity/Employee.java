@@ -1,4 +1,4 @@
-package com.twinkle.crud.entity;
+package com.venus.crud.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
